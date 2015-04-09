@@ -6,6 +6,7 @@ Note:  this is just a skeleton for you to work with.  But it already
 
 from nose.tools import assert_equal
 
+
 def factorial_recursive(n):
     # n * (n-1) * (n-2) * ... until n = 0
     if n == 0:
@@ -14,8 +15,7 @@ def factorial_recursive(n):
     else:
         recursion = factorial_recursive(n-1)
         product = recursion * n
-        return product    
-
+        return product
 
 
 def test_factorial():
@@ -23,7 +23,6 @@ def test_factorial():
     assert_equal(factorial_recursive(1), 1)
     assert_equal(factorial_recursive(2), 2)
     assert_equal(factorial_recursive(3), 6)
-    
 
 
 if __name__ == '__main__':
